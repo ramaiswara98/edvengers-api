@@ -1,0 +1,18 @@
+Standard Api
+{root.api}/v1/{grouping}/{endpoint}
+Standard Status response
+
+200 - OK --> Call API Succes
+201 - CREATED --> Post Succes
+400 - Bad Request --> Error on client Side
+401 - UNAUTHORIZED --> User not authorized
+403 - FORBIDDEN --> User not Allow to acces
+404 - NOT FOUND --> Request end point not FOUND
+500 - Internal Server Error ---> Error on Server Side
+502 - Bad Gateway --> Invalid Response from another client
+
+Group::Authentication 
+[1] - Login
+    {root.api}/v1/auth/login
+[2] - Register
+    {root.api}/v1/auth/register
